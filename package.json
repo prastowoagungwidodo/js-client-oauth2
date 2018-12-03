@@ -1,5 +1,5 @@
 {
-  "name": "client-oauth2",
+  "name": "ag-client-oauth2",
   "version": "4.2.1",
   "description": "Straight-forward execution of OAuth 2.0 flows and authenticated API requests",
   "main": "src/client-oauth2.js",
@@ -9,6 +9,10 @@
     "index.d.ts",
     "LICENSE"
   ],
+ "react-native": {
+    "./src/btoa": "./src/btoa/react-native.js",
+    "./src/request": "./src/request/browser.js"
+  },
   "browser": {
     "buffer": false,
     "safe-buffer": false,
@@ -66,6 +70,7 @@
   },
   "dependencies": {
     "popsicle": "^9.1.0",
-    "safe-buffer": "^5.1.1"
+    "safe-buffer": "^5.1.1",
+    "base-64": "^0.1.0"
   }
 }
